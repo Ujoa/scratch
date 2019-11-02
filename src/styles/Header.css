@@ -1,0 +1,112 @@
+#ucfhb {
+    display: block !important;
+    height: 70px;
+    width: 100%;
+    margin: auto;
+    background: #608fee;
+    position: relative;
+    z-index: 10000;
+  
+    /* Flexbox-specific styles */
+    align-self: flex-start !important;
+    flex: 0 0 auto !important;
+    order: 0 !important;
+  }
+
+#ucfhb-logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+
+#ucfhb-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: visible;
+    border-bottom: 1px solid #454545;
+    top: 0;
+    float: none;
+  }
+
+/* Three components of UCF. myUCF, KnightsMail, and Webcourses*/
+#ucfhb-services {
+    width: 321px;
+    z-index: 1;
+  }
+  
+  #ucfhb-services div:hover > a {
+    opacity: .7;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    /* IE 5-7 */
+    filter: alpha(opacity=70);
+  }
+  
+  #ucfhb-services div:hover > a:hover {
+    opacity: 1.0;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    /* IE 5-7 */
+    filter: alpha(opacity=100);
+  }
+  
+  #ucfhb-services > div {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0s linear 0s; /* Force immediate hide of children */
+    -ms-transition: all 0s linear 0s;
+    transition: all 0s linear 0s;
+  }
+  .ucfhb-shiftleft + #ucfhb-services > div {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.2s ease-in 0.4s; /* Show the form field after the button has 'moved' left */
+    -ms-transition: opacity 0.2s ease-in 0.4s;
+    transition: opacity 0.2s ease-in 0.4s;
+  }
+  #ucfhb-services .ucfhb-service {
+    display: block;
+    float: left;
+    margin: 11px 0;
+  }
+  #ucfhb-services #ucfhb-myucf {
+    background-position: -264px -70px;
+    height: 25px;
+    width: 66px;
+    color: white;
+  }
+  #ucfhb-services #ucfhb-knightsmail {
+    background-position: 8px -70px;
+    height: 25px;
+    width: 128px;
+    color: white;
+  }
+  #ucfhb-services #ucfhb-webcourses {
+    background-position: -124px -70px;
+    height: 25px;
+    width: 124px;
+    color: white;
+  }
+
+  #ucfhb-services {
+    height: auto;
+    position: static;
+    padding: 0;
+    text-align: center;
+    width: auto;
+  }
+  #ucfhb-services > div {
+    position: static;
+    height: auto;
+    width: 319px;
+    margin: auto;
+    visibility: visible;
+    opacity: 1;
+    left: auto;
+    right: auto;
+    overflow: auto;
+  }
+  #ucfhb-services > div > a { line-height: 30px; margin: 0; }

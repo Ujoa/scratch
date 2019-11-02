@@ -1,9 +1,9 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
-  height: 40vmin;
+  float: left;
 }
 
 .App-header {
@@ -12,11 +12,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.alignleft{
+  justify-content: right;
+}
+
+.Login form {
+  margin: 0 auto;
+  max-width: 320px;
 }
